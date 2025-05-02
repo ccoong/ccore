@@ -24,7 +24,7 @@ if(CMAKE_SYSTEM_NAME MATCHES "Linux")
     file(GLOB SRC_FILE_platform "${CMAKE_SOURCE_DIR}/src/*.Linux.cpp" "${CMAKE_SOURCE_DIR}/src/*/*.Linux.cpp" "${CMAKE_SOURCE_DIR}/src/*/*/*.Linux.cpp")
     add_library(${PROJECT_NAME} SHARED ${SRC_FILE} ${SRC_FILE_platform})
 
-    set(install_dir /usr/local/cc13535)
+    set(install_dir /var/ccoong)
 elseif(CMAKE_SYSTEM_NAME STREQUAL "Darwin")
     file(GLOB SRC_FILE_platform "${CMAKE_SOURCE_DIR}/src/*.Darwin.cpp" "${CMAKE_SOURCE_DIR}/src/*/*.Darwin.cpp" "${CMAKE_SOURCE_DIR}/src/*/*/*.Darwin.cpp")
     add_library(${PROJECT_NAME} STATIC ${SRC_FILE} ${SRC_FILE_platform})
